@@ -23,13 +23,13 @@ task("clean", () => {
 });
 
 task("copy:images", () => {
-    return src(`${SRC_PATH}/images/**/*`)
+    return src(`${SRC_PATH}/images/**`)
         .pipe(dest(`${DIST_PATH}/images`))
         .pipe(reload({stream: true}));
 });
 
 task("copy:fonts", () => {
-    return src(`${SRC_PATH}/fonts/**/*`)
+    return src(`${SRC_PATH}/fonts/**`)
         .pipe(
             rename(function (path) {
                 path.basename = `${path.basename.toLowerCase()}`;
@@ -47,7 +47,7 @@ task("html", () => {
 });
 
 task("styles", () => {
-    return src([`${SRC_PATH}/sass/pages/*.scss`])
+    return src([`${SRC_PATH}/sass/main.scss`])
         .pipe(gulpif(env === "dev", sourcemaps.init()))
         .pipe(sassGlob())
         .pipe(sass().on("error", sass.logError))
@@ -69,8 +69,8 @@ task("server", () => {
 task("watch", () => {
     watch(`${SRC_PATH}/images/**`, series("copy:images")).on("change", reload);
     watch(`${SRC_PATH}/fonts/**`, series("copy:fonts")).on("change", reload);
-    watch(`${SRC_PATH}/pug/**/*.pug`, series("html")).on("change", reload);
-    watch(`${SRC_PATH}/sass/**/*.scss`, series("styles")).on("change", reload);
+    watch(`${SRC_PATH}/pug/**`, series("html")).on("change", reload);
+    watch(`${SRC_PATH}/sass/**`, series("styles")).on("change", reload);
 });
 task(
     "default",

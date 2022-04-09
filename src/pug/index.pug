@@ -1,9 +1,43 @@
 doctype html
 html(lang="en")
     head
-        title Main Page
+        title О школе
         meta(charset="utf-8")
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible" content="ie=edge")
-        link(href="./" type="text/css" rel="stylesheet")
-    body Hello world!
+        link(href="./css/main.css" type="text/css" rel="stylesheet")
+    body
+        div(class="wrapper")
+            section(class="welcome")
+                include ./blocks/header
+                div(class="container")
+                    div(class="welcome__text") НАУЧИСЬ ПЕТЬ И ИГРАТЬ ЛЮБИМЫЕ ПЕСНИ И МЕЛОДИИ В САМОЙ БОЛЬШОЙ МУЗЫКАЛЬНОЙ ШКОЛЕ МОСКВЫ
+                    div(class="welcome__description") Уроки вокала, гитары и фортепиано оффлайн в центре Москвы и онлайн
+                    div(class="roadmap")
+                        div(class="roadmap__line")
+                        ul(class="roadmap__list")
+                            li(class="roadmap__item")
+                                div(class="roadmap__smile")
+                                    svg()
+                                        use(xlink:href="./images/sprites.svg#")
+                                div(class="roadmap__item-title") Занятия с 6+ лет
+                            li(class="roadmap__item")
+                                div(class="roadmap__smile")
+                                    svg()
+                                        use(xlink:href="./images/sprites.svg#")
+                                div(class="roadmap__item-title") Обучение в мини-группах по 3-4 человека и индивидуально
+                            li(class="roadmap__item")
+                                div(class="roadmap__smile")
+                                    svg()
+                                        use(xlink:href="./images/sprites.svg#")
+                                div(class="roadmap__item-title") 13.000+ выпускников за 8 лет
+                            li(class="roadmap__item")
+                                div(class="roadmap__smile")
+                                    svg()
+                                        use(xlink:href="./images/sprites.svg#")
+                                div(class="roadmap__item-title") 5-10 мин пешком от м. Чистые пруды/м.Сухаревская/м. Цветной бульвар
+                            li(class="roadmap__item")
+                                div(class="roadmap__smile")
+                                    svg()
+                                        use(xlink:href="./images/sprites.svg#")
+                                div(class="roadmap__item-title") Есть курсы и занятия onlinе
