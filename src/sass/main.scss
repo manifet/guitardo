@@ -1,7 +1,7 @@
-@import 'utils/libs';
-@import 'utils/vars';
-@import 'utils/mixins';
-@import 'utils/fonts';
+@import './utils/libs';
+@import './utils/vars';
+@import './utils/mixins';
+@import './utils/fonts';
 
 html {
   font-size: $mainFontSize;
@@ -59,3 +59,5 @@ li {
   margin: 0 auto;
   max-width: $desktopWidth;
 }
+@import './blocks/header';
+@import './blocks/footer';

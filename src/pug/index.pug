@@ -5,39 +5,235 @@ html(lang="en")
         meta(charset="utf-8")
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible" content="ie=edge")
-        link(href="./css/main.css" type="text/css" rel="stylesheet")
+        link(href="./main.css" type="text/css" rel="stylesheet")
     body
         div(class="wrapper")
             section(class="welcome")
                 include ./blocks/header
                 div(class="container")
-                    div(class="welcome__text") НАУЧИСЬ ПЕТЬ И ИГРАТЬ ЛЮБИМЫЕ ПЕСНИ И МЕЛОДИИ В САМОЙ БОЛЬШОЙ МУЗЫКАЛЬНОЙ ШКОЛЕ МОСКВЫ
-                    div(class="welcome__description") Уроки вокала, гитары и фортепиано оффлайн в центре Москвы и онлайн
-                    div(class="roadmap")
-                        div(class="roadmap__line")
-                        ul(class="roadmap__list")
-                            li(class="roadmap__item")
-                                div(class="roadmap__smile")
-                                    svg()
-                                        use(xlink:href="./images/sprites.svg#")
-                                div(class="roadmap__item-title") Занятия с 6+ лет
-                            li(class="roadmap__item")
-                                div(class="roadmap__smile")
-                                    svg()
-                                        use(xlink:href="./images/sprites.svg#")
-                                div(class="roadmap__item-title") Обучение в мини-группах по 3-4 человека и индивидуально
-                            li(class="roadmap__item")
-                                div(class="roadmap__smile")
-                                    svg()
-                                        use(xlink:href="./images/sprites.svg#")
-                                div(class="roadmap__item-title") 13.000+ выпускников за 8 лет
-                            li(class="roadmap__item")
-                                div(class="roadmap__smile")
-                                    svg()
-                                        use(xlink:href="./images/sprites.svg#")
-                                div(class="roadmap__item-title") 5-10 мин пешком от м. Чистые пруды/м.Сухаревская/м. Цветной бульвар
-                            li(class="roadmap__item")
-                                div(class="roadmap__smile")
-                                    svg()
-                                        use(xlink:href="./images/sprites.svg#")
-                                div(class="roadmap__item-title") Есть курсы и занятия onlinе
+                    h1(class="welcome__heading") НАУЧИСЬ ПЕТЬ И ИГРАТЬ ЛЮБИМЫЕ ПЕСНИ И МЕЛОДИИ В САМОЙ БОЛЬШОЙ МУЗЫКАЛЬНОЙ ШКОЛЕ МОСКВЫ
+                    div(class="welcome__text") Уроки вокала, гитары и фортепиано оффлайн в центре Москвы и онлайн
+                    div(class="features")
+                        div(class="features__line")
+                        ul(class="features__list")
+                            li(class="features__item")
+                                div(class="features__smile")
+                                    svg(width="179" height="179" viewBox="0 0 179 179")
+                                        use(xlink:href="./images/sprites.svg#smile_1")
+                                div(class="features__item-title") Занятия с 6+ лет
+                            li(class="features__item")
+                                div(class="features__smile")
+                                    svg(width="139" height="139" viewBox="0 0 139 139")
+                                        use(xlink:href="./images/sprites.svg#smile_2")
+                                div(class="features__item-title") Обучение в мини-группах по 3-4 человека и индивидуально
+                            li(class="features__item")
+                                div(class="features__smile")
+                                    svg(width="139" height="139" viewBox="0 0 139 139")
+                                        use(xlink:href="./images/sprites.svg#smile_3")
+                                div(class="features__item-title") 13.000+ выпускников за 8 лет
+                            li(class="features__item")
+                                div(class="features__smile")
+                                    svg(width="171" height="171" viewBox="0 0 171 171")
+                                        use(xlink:href="./images/sprites.svg#smile_4")
+                                div(class="features__item-title") 5-10 мин пешком от м. Чистые пруды/м.Сухаревская/м. Цветной бульвар
+                            li(class="features__item")
+                                div(class="features__smile")
+                                    svg(width="139" height="139" viewBox="0 0 139 139")
+                                        use(xlink:href="./images/sprites.svg#smile_5")
+                                div(class="features__item-title") Есть курсы и занятия onlinе
+            section(class="trial-lessons")
+                div(class="container")
+                    h2(class="trial-lessons__heading") Выбирай свое направление и записывайся на бесплатный пробный урок музыки
+                    div(class="trial-lessons__text") Мы конечно все подробно расскажем на этом сайте, но лучше приходи и посмотри на все своими глазами) С нас чай, сладости, музыка и хорошее настроение)
+                    ul(class="trial-lessons__list")
+                        li(class="trial-lessons__item")
+                            h3(class="trial-lessons__item-title") На бесплатном уроке ВОКАЛА ты:
+                            ul(class="trial-lessons__sublist")
+                                li(class="trial-lessons__subitem")
+                                    div(class="trial-lessons__smile")
+                                        svg(width="193" height="188" viewBox="0 0 193 188")
+                                            use(xlink:href="./images/sprites.svg#smile_6")
+                                    div(class="trial-lessons__subitem-text") получишь ИНДИВИДУАЛЬНЫЕ рекомендации по развитию вашего голоса
+                                li(class="trial-lessons__subitem")
+                                    div(class="trial-lessons__smile")
+                                        svg(width="193" height="188" viewBox="0 0 193 188")
+                                            use(xlink:href="./images/sprites.svg#smile_7")
+                                    div(class="trial-lessons__subitem-text") сделаешь упражнения, которые улучшат голос при пении и в повседневной жизни
+                                li(class="trial-lessons__subitem")
+                                    div(class="trial-lessons__smile")
+                                        svg(width="193" height="188" viewBox="0 0 193 188")
+                                            use(xlink:href="./images/sprites.svg#smile_8")
+                                    div(class="trial-lessons__subitem-text") узнаешь, как работает голосовой аппарат и споёшь песню
+                            button(class="btn trial-lessons__sign-up") ЗАПИСАТЬСЯ НА БЕСПЛАТНЫЙ УРОК ВОКАЛА
+                        li(class="trial-lessons__item")
+                            h3(class="trial-lessons__item-title") На бесплатном уроке ФОРТЕПИАНО ты:
+                            ul(class="trial-lessons__sublist")
+                                li(class="trial-lessons__subitem")
+                                    div(class="trial-lessons__smile")
+                                        svg(width="193" height="188" viewBox="0 0 193 188")
+                                            use(xlink:href="./images/sprites.svg#smile_9")
+                                    div(class="trial-lessons__subitem-text") самостоятельно двумя руками сыграешь известную песню, даже если не знаешь нот
+                                li(class="trial-lessons__subitem")
+                                    div(class="trial-lessons__smile")
+                                        svg(width="193" height="188" viewBox="0 0 193 188")
+                                            use(xlink:href="./images/sprites.svg#smile_10")
+                                    div(class="trial-lessons__subitem-text") узнаешь, как быстро научиться играть любимые песни и мелодии на фортепиано
+                            button(class="btn trial-lessons__sign-up") ЗАПИСАТЬСЯ НА БЕСПЛАТНЫЙ УРОК ФОРТЕПИАНО
+                        li(class="trial-lessons__item")
+                            h3(class="trial-lessons__item-title") На бесплатном уроке ГИТАРЫ ты:
+                            ul(class="trial-lessons__sublist")
+                                li(class="trial-lessons__subitem")
+                                    div(class="trial-lessons__smile")
+                                        svg(width="194" height="188" viewBox="0 0 194 188")
+                                            use(xlink:href="./images/sprites.svg#smile_11")
+                                    div(class="trial-lessons__subitem-text") Изучишь 4 базовых аккорда, на которых построено большое количество песен
+                                li(class="trial-lessons__subitem")
+                                    div(class="trial-lessons__smile")
+                                        svg(width="194" height="188" viewBox="0 0 194 188")
+                                            use(xlink:href="./images/sprites.svg#smile_12")
+                                    div(class="trial-lessons__subitem-text") Освоишь гитарный бой
+                                li(class="trial-lessons__subitem")
+                                    div(class="trial-lessons__smile")
+                                        svg(width="194" height="188" viewBox="0 0 194 188")
+                                            use(xlink:href="./images/sprites.svg#smile_13")
+                                    div(class="trial-lessons__subitem-text") Обязательно сыграешь свою первую песню на гитаре, еще и в ансамбле
+                            button(class="btn trial-lessons__sign-up") ЗАПИСАТЬСЯ НА БЕСПЛАТНЫЙ УРОК ГИТАРЫ
+            section(class="indvidual-lesson")
+                div(class="container")
+                    div(class="indvidual-lesson__heading-wrap")
+                        h2(class="indvidual-lesson__heading") У тебя уже был опыт занятий и ты хочешь развивать свои навыки?
+                        div(class="indvidual-lesson__smile")
+                            svg(width="478" height="511" viewBox="0 0 478 511")
+                                use(xlink:href="./images/sprites.svg#smile_14")
+                    div(class="indvidual-lesson__text") Наши ТОП-преподаватели ждут тебя на индивидуальном пробном занятии
+                    div(class="indvidual-lesson__footer")
+                        button(class="btn indvidual-lesson__sing-up") ЗАПИСАТЬСЯ НА ИНДИВИДУАЛЬНЫЙ ПРОБНЫЙ УРОК
+                        div(class="indvidual-lesson__text") Мы позвоним или напишем тебе, чтобы подобрать подходящего преподавателя под твои цели!)
+            section(class="service")
+                h1(class="programms-heading") ПРОГРАММЫ ОБУЧЕНИЯ В НАШЕЙ ШКОЛЕ:
+                div(class="container")
+                    div(class="service__heading-wrap")
+                        h2(class="service__heading") Оффлайн-курсы
+                        div(class="service__smile")
+                            svg(width="235" height="71" viewBox="0 0 235 71")
+                                use(xlink:href="./images/sprites.svg#smile-group_1")
+                    div(class="service__info")
+                        h3(class="service__info-heading") Подойдут тебе, если:
+                        ul(class="service__info-list")
+                            li(class="service__info-item") Ты хочешь заниматься с нуля
+                            li(class="service__info-item") У тебя был небольшой опыт занятий самостоятельно или с преподавателем
+                            li(class="service__info-item") Тебе важно учиться вживую
+                            li(class="service__info-item") Ты хочешь найти новые знакомства и проводить время в кругу единомышленников
+                            li(class="service__info-item") Ты планируешь заниматься регулярно
+                            li(class="service__info-item") Ты в Москве и тебе комфортно добираться до школы
+                            li(class="service__info-item") Ты хочешь выбрать самый эффективный путь обучения музыке
+                    ul(class="courses")
+                        li(class="courses__item")
+                            h3(class="courses__item-heading") КУРС ПО ВОКАЛУ
+                            span(class="courses__item-title") Научись красиво петь
+                            div(class="courses__item-text") Фундаментальный курс по вокалу для начинающих — от основ дыхания до расширения диапазона и сценического воплощения
+                            button(class="btn courses__item-btn") ПОДРОБНЕЕ
+                            div(class="courses__item-logo")
+                                svg(width="128" height="129" viewBox="0 0 128 129")
+                                    use(xlink:href="./images/sprites.svg#logo_1")
+                        li(class="courses__item")
+                            h3(class="courses__item-heading") КУРС ПО ФОРТЕПИАНО
+                            span(class="courses__item-title") Научить играть на фортепиано
+                            div(class="courses__item-text") Освой 24 мелодии по программе и 24 любых мелодии (или песни) по твоему выбору в рамках курса!
+                            button(class="btn courses__item-btn") ПОДРОБНЕЕ
+                            div(class="courses__item-logo")
+                                svg(width="128" height="127" viewBox="0 0 128 127")
+                                    use(xlink:href="./images/sprites.svg#logo_2")
+                        li(class="courses__item")
+                            h3(class="courses__item-heading") КУРС ПО ГИТАРЕ
+                            span(class="courses__item-title") Научись играть на гитаре
+                            div(class="courses__item-text") Легендарный курс по акустической гитаре по методике основателя школы, Александра Казакова
+                            button(class="btn courses__item-btn") ПОДРОБНЕЕ
+                            div(class="courses__item-logo")
+                                svg(width="128" height="127" viewBox="0 0 128 127")
+                                    use(xlink:href="./images/sprites.svg#logo_3")
+            section(class="service")
+                div(class="container")
+                    div(class="service__heading-wrap")
+                        h2(class="service__heading") Индивидуальные занятия 1 на 1 с преподавателем В ШКОЛЕ ОФФЛАЙН
+                        div(class="service__heading-smile")
+                            svg(width="310" height="135" viewBox="0 0 310 135")
+                                use(xlink:href="./images/sprites.svg#smile-group_2")
+                    div(class="service__info")
+                        h3(class="service__info-heading") Подойдут тебе, если:
+                        ul(class="service__info-list")
+                            li(class="service__info-item") Ты уже имеешь большой опыт в музыке и хочешь развивать свои навыки с опытным наставником
+                            li(class="service__info-item") Твой запрос на обучение точечный и индивидуальный — ты хочешь подготовить номер на мероприятие, выучить конкретную композицию
+                            li(class="service__info-item") Тебя интересуют особенные музыкальные дисциплины: сонграйтинг, сольфеджио, импровизация
+                            li(class="service__info-item") Ты хочешь посещать занятия часто (более 2 раз в неделю) или наоборот не планируешь регулярно заниматься
+                            li(class="service__info-item") Тебе важно заниматься именно вживую
+                            li(class="service__info-item") Ты ищешь занятия для ребёнка от 6 до 12 (гитара/фортепиано) и от 6 до 16 лет (вокал)
+                    div(class="service__footer")
+                        button(class="btn service__footer-btn") ПОДРОБНЕЕ
+                        a(href="" class="service__footer-text") Узнать подробности и выбрать преподавателя
+            section(class="service")
+                div(class="container")
+                    div(class="service__heading-wrap")
+                        h2(class="service__heading") Индивидуальные занятия 1 на 1 с преподавателем ОНЛАЙН
+                        div(class="service__heading-smile")
+                            svg(width="339" height="149" viewBox="0 0 339 149")
+                                use(xlink:href="./images/sprites.svg#smile-group_3")
+                    div(class="service__info")
+                        h3(class="service__info-heading") Подойдут тебе, если:
+                        ul(class="service__info-list")
+                            li(class="service__info-item") Ты не можешь или тебе неудобно приезжать в школу в Москве
+                            li(class="service__info-item") Тебе важно заниматься с преподавателем 1 на 1 в режиме реального времени
+                            li(class="service__info-item") Ты уже имеешь большой опыт в музыке и хочешь развивать свои навыки с опытным наставником
+                            li(class="service__info-item") Твой запрос на обучение точечный и индивидуальный — ты хочешь подготовить номер на мероприятие, выучить конкретную композицию
+                            li(class="service__info-item") Тебя интересуют особенные музыкальные дисциплины: сонграйтинг, сольфеджио, импровизация ы
+                            li(class="service__info-item") Ты хочешь посещать занятия часто (более 2 раз в неделю) или наоборот не планируешь регулярно заниматься
+                            li(class="service__info-item") Ты ищешь занятия для ребёнка от 6 до 12 (гитара/фортепиано) и от 6 до 16 лет (вокал)
+                    div(class="service__footer")
+                        button(class="btn service__footer-btn") ПОДРОБНЕЕ
+                        a(href="" class="service__footer-text") Узнать подробности и выбрать преподавателя
+            section(class="service")
+                div(class="container")
+                    div(class="service__heading-wrap")
+                        h2(class="service__heading") ОНлайн-курсы
+                        div(class="service__heading-smile")
+                            svg(width="339" height="149" viewBox="0 0 339 149")
+                                use(xlink:href="./images/sprites.svg#smile-group_4")
+                    div(class="service__info")
+                        h3(class="service__info-heading") Подойдут тебе, если:
+                        ul(class="service__info-list")
+                            li(class="service__info-item") Ты хочешь заниматься тогда, когда тебе удобно, когда пришло вдохновение
+                            li(class="service__info-item") Ты хочешь заниматься любой комфортный промежуток времени — от 10 минут до бесконечности
+                            li(class="service__info-item") Тебе важна обратная связь преподавателя, но ты не хочешь, чтобы кто-то стоял над душой
+                            li(class="service__info-item") Ты не можешь или тебе неудобно приезжать в школу в Москве
+                            li(class="service__info-item") Ты хочешь получить быстрые результаты
+                            li(class="service__info-item") Ты хочешь получить максимум знаний за минимальную сумму
+                    div(class="service__footer")
+                        button(class="btn service__footer-btn") ВЫБРАТЬ КУРС
+                        a(href="" class="service__footer-text") Перейти в онлайн-школу, посмотреть бесплатные уроки и выбрать курс
+            section(class="slider")
+                div(class="container")
+                    h2(class="slider__heading") Отзывы и результаты учеников
+                    div(class="slider__wrap")
+                        button(class="slider__btn slider__btn-back")
+                            svg(width="18" height="21" viewBox="0 0 18 21")
+                                use(xlink:href="./images/sprites.svg#slider-btn_back")
+                        ul(class="slider__list")
+                            li(class="slider__item")
+                        button(class="slider__btn slider__btn-next")
+                            svg(width="18" height="21" viewBox="0 0 18 21")
+                                use(xlink:href="./images/sprites.svg#slider-btn_next")
+                    div(class="slider__footer")
+                        h2(class="slider__footer-heading") Получай бесплатные полезные материалы и будь в курсе последних новостей школы музыки Guitardo, подпишись на Дайджест Guitardo в Telegram:
+                        div(class="slider__footer-title") Вступай в чаты, где мы бесплатно помогаем людям, которые учатся петь и играть самостоятельно:
+                        ul(class="slider__footer-list")
+                            li(class="slider__footer-item")
+                                button(class="slider__footer-btn") ЧАТ ВОКАЛИСТОВ
+                            li(class="slider__footer-item")
+                                button(class="slider__footer-btn") ЧАТ ПИАНИСТОВ
+                            li(class="slider__footer-item")
+                                button(class="slider__footer-btn") ЧАТ ГИТАРИСТОВ
+            include ./blocks/footer
+
+
+
+
