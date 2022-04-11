@@ -1,6 +1,6 @@
 header(class="header")
-    div(class="container")
-        div(class="header__row")
+    div(class="container header__container")
+        div(class="header__up")
             nav(class="nav")
                 ul(class="nav__list")
                     li(class="nav__item")
@@ -10,7 +10,7 @@ header(class="header")
                     li(class="nav__item")
                         a(href="" class="nav__item-link") Вакансии
                     li(class="nav__item")
-                        a(href="" class="nav__item-link") Преподаватели
+                        a(href="./teachers.html" class="nav__item-link") Преподаватели
                     li(class="nav__item")
                         a(href="" class="nav__item-link") Отзывы
                     li(class="nav__item")
@@ -19,11 +19,12 @@ header(class="header")
                         a(href="" class="nav__item-link") Онлайн курс
                     li(class="nav__item")
                         a(href="" class="nav__item-link") Магазин
-            div(class="header__row")
-                div(class="header__logo-wrap")
-                    a(class="logo")
-                        svg(width="214" height="90" viewBox="0 0 214 90")
-                            use(xlink:href="./images/sprites.svg#logo")
-                div(class="header__btns-wrap")
-                    a(class="btn") БЕСПЛАТНЫЙ УРОК
-                    a(class="btn") ОПЛАТИТЬ КУРС
+        div(class="header__down")
+            div(class="header__logo-wrap")
+                a(href="./" class="logo")
+                    img(src="./images/logo/logo.svg" class="logo__img" alt="Логотип")
+            div(class="header__btns-wrap")
+                a(class="btn header__btn")
+                    span(class="btn__text") БЕСПЛАТНЫЙ УРОК
+                a(class="btn header__btn")
+                    span(class="btn__text") ОПЛАТИТЬ КУРС

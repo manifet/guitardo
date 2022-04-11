@@ -1,11 +1,11 @@
 footer(class="footer")
-    div(class="container")
-        div(class="footer__logo")
-            svg(width="214" height="90" viewBox="0 0 214 90")
-                use(xlink:href="./images/sprites.svg#logo")
+    div(class="container footer__container")
+        div(class="footer__logo-wrap")
+            a(class="logo")
+                img(src="./images/logo/logo.svg" class="logo__img" alt="Логотип")
         a(href="tel:+74951810091" class="footer__telephone") + 7 495 181-00-91
         div(class="footer__cards")
-            div(class="footer__heading") Способы оплаты
+            div(class="footer__cards-heading") Способы оплаты
             ul(class="footer__cards-list")
                 li(class="footer__cards-item")
                     img(class="footer__cards-img" src="./images/cards/visa.svg" alt="Visa")

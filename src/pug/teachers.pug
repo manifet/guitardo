@@ -10,7 +10,7 @@ html(lang="en")
         div(class="wrapper")
             section(class="teachers")
                 include ./blocks/header
-                div(class="container")
+                div(class="container teachers__container")
                     h1(class="teachers__heading") НАШИ ПРЕПОДАВАТЕЛИ
                     h2(class="teachers__title") Мы постарались предоставить всю необходимую информацию, чтобы тебе было просто найти подходящего преподавателя.
                     form(class="teachers__form")
@@ -18,8 +18,7 @@ html(lang="en")
                             div(class="teachers__select")
                                 div(class="teachers__select-title") Направление
                                 div(class="teachers__select-icon")
-                                    svg()
-                                        use(xlink:href="./images/sprites.svg#")
+                                    img(src="./images/other/select.svg" alt="Select icon")
                             ul(class="teachers__option-list")
                                 li(class="teachers__option") Вокал
                                 li(class="teachers__option") Фортепиано
@@ -28,17 +27,16 @@ html(lang="en")
                             div(class="teachers__select")
                                 div(class="teachers__select-title") Мужчина/женщина
                                 div(class="teachers__select-icon")
-                                    svg()
-                                        use(xlink:href="./images/sprites.svg#")
+                                    img(src="./images/other/select.svg" alt="Select icon")
                             ul(class="teachers__option-list")
                                 li(class="teachers__option") Вокал
                                 li(class="teachers__option") Фортепиано
                         div(class="teachers__checkbox-wrap")
-                            input(class="teachers__checkbox" type="checkbox")
-                            label(class="teachers__checkbox-label") Обучает онлайн
+                            input(class="teachers__checkbox" id="checkbox-1" type="checkbox")
+                            label(class="teachers__checkbox-label" for="checkbox-1") Обучает онлайн
                         div(class="teachers__checkbox-wrap")
-                            input(class="teachers__checkbox" type="checkbox")
-                            label(class="teachers__checkbox-label") Работает с детьми
+                            input(class="teachers__checkbox" id="checkbox-2" type="checkbox")
+                            label(class="teachers__checkbox-label" for="checkbox-2") Работает с детьми
                     div(class="teachers__card")
                         div(class="teachers__img-wrap")
                             img(src="./images/teachers/fake.jpg" class="teachers__img" alt="Преподаватель")
@@ -55,7 +53,11 @@ html(lang="en")
                                 p() Какие программы ведет?
                                 p() Особенные музыкальные навыки:
                                 p() Подход к преподаванию:
-                            button(class="btn teachers__btn") ЗАПИСАТЬСЯ НА ЗАНЯТИЕ
                             div(class="teachers__btn-wrap")
-                                button(class="btn teachers__btn") Смотреть видео-визитку
-                                button(class="btn teachers__btn") Смотреть исполнение
+                                button(class="btn teachers__btn" style="background: linear-gradient(89.62deg, #EC2D70 -13.84%, #651FF9 39.95%, #6942B9 87.61%); box-shadow: 5px 10px 20px #713FD3;")
+                                    div(class="btn__text") Записаться на занятие
+                            div(class="teachers__btn-wrap")
+                                button(class="btn teachers__btn" style="background: #C42999; box-shadow: 10px 15px 30px #AC2DD4;")
+                                    div(class="btn__text") Смотреть видео-визитку
+                                button(class="btn teachers__btn" style="background: #6A42B9; box-shadow: 10px 15px 30px #6A42B9;")
+                                    div(class="btn__text") Смотреть исполнение

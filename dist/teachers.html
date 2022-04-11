@@ -11,42 +11,35 @@
     <div class="wrapper">
       <section class="teachers">
         <header class="header">
-          <div class="container">
-            <div class="header__row">
+          <div class="container header__container">
+            <div class="header__up">
               <nav class="nav">
                 <ul class="nav__list">
                   <li class="nav__item"><a class="nav__item-link" href="">О школе</a></li>
                   <li class="nav__item"><a class="nav__item-link" href="">Курсы</a></li>
                   <li class="nav__item"><a class="nav__item-link" href="">Вакансии</a></li>
-                  <li class="nav__item"><a class="nav__item-link" href="">Преподаватели</a></li>
+                  <li class="nav__item"><a class="nav__item-link" href="./teachers.html">Преподаватели</a></li>
                   <li class="nav__item"><a class="nav__item-link" href="">Отзывы</a></li>
                   <li class="nav__item"><a class="nav__item-link" href="">Цены</a></li>
                   <li class="nav__item"><a class="nav__item-link" href="">Онлайн курс</a></li>
                   <li class="nav__item"><a class="nav__item-link" href="">Магазин</a></li>
                 </ul>
               </nav>
-              <div class="header__row">
-                <div class="header__logo-wrap"><a class="logo">
-                    <svg width="214" height="90" viewBox="0 0 214 90">
-                      <use xlink:href="./images/sprites.svg#logo"></use>
-                    </svg></a></div>
-                <div class="header__btns-wrap"><a class="btn">БЕСПЛАТНЫЙ УРОК</a><a class="btn">ОПЛАТИТЬ КУРС</a></div>
-              </div>
+            </div>
+            <div class="header__down">
+              <div class="header__logo-wrap"><a class="logo" href="./"><img class="logo__img" src="./images/logo/logo.svg" alt="Логотип"></a></div>
+              <div class="header__btns-wrap"><a class="btn header__btn"><span class="btn__text">БЕСПЛАТНЫЙ УРОК</span></a><a class="btn header__btn"><span class="btn__text">ОПЛАТИТЬ КУРС</span></a></div>
             </div>
           </div>
         </header>
-        <div class="container">
+        <div class="container teachers__container">
           <h1 class="teachers__heading">НАШИ ПРЕПОДАВАТЕЛИ</h1>
           <h2 class="teachers__title">Мы постарались предоставить всю необходимую информацию, чтобы тебе было просто найти подходящего преподавателя.</h2>
           <form class="teachers__form">
             <div class="teachers__select-wrap">
               <div class="teachers__select">
                 <div class="teachers__select-title">Направление</div>
-                <div class="teachers__select-icon">
-                  <svg>
-                    <use xlink:href="./images/sprites.svg#"></use>
-                  </svg>
-                </div>
+                <div class="teachers__select-icon"><img src="./images/other/select.svg" alt="Select icon"></div>
               </div>
               <ul class="teachers__option-list">
                 <li class="teachers__option">Вокал</li>
@@ -57,11 +50,7 @@
             <div class="teachers__select-wrap">
               <div class="teachers__select">
                 <div class="teachers__select-title">Мужчина/женщина</div>
-                <div class="teachers__select-icon">
-                  <svg>
-                    <use xlink:href="./images/sprites.svg#"></use>
-                  </svg>
-                </div>
+                <div class="teachers__select-icon"><img src="./images/other/select.svg" alt="Select icon"></div>
               </div>
               <ul class="teachers__option-list">
                 <li class="teachers__option">Вокал</li>
@@ -69,12 +58,12 @@
               </ul>
             </div>
             <div class="teachers__checkbox-wrap">
-              <input class="teachers__checkbox" type="checkbox">
-              <label class="teachers__checkbox-label">Обучает онлайн</label>
+              <input class="teachers__checkbox" id="checkbox-1" type="checkbox">
+              <label class="teachers__checkbox-label" for="checkbox-1">Обучает онлайн</label>
             </div>
             <div class="teachers__checkbox-wrap">
-              <input class="teachers__checkbox" type="checkbox">
-              <label class="teachers__checkbox-label">Работает с детьми</label>
+              <input class="teachers__checkbox" id="checkbox-2" type="checkbox">
+              <label class="teachers__checkbox-label" for="checkbox-2">Работает с детьми</label>
             </div>
           </form>
           <div class="teachers__card">
@@ -93,10 +82,18 @@
                 <p>Особенные музыкальные навыки:</p>
                 <p>Подход к преподаванию:</p>
               </div>
-              <button class="btn teachers__btn">ЗАПИСАТЬСЯ НА ЗАНЯТИЕ</button>
               <div class="teachers__btn-wrap">
-                <button class="btn teachers__btn">Смотреть видео-визитку</button>
-                <button class="btn teachers__btn">Смотреть исполнение</button>
+                <button class="btn teachers__btn" style="background: linear-gradient(89.62deg, #EC2D70 -13.84%, #651FF9 39.95%, #6942B9 87.61%); box-shadow: 5px 10px 20px #713FD3;">
+                  <div class="btn__text">Записаться на занятие</div>
+                </button>
+              </div>
+              <div class="teachers__btn-wrap">
+                <button class="btn teachers__btn" style="background: #C42999; box-shadow: 10px 15px 30px #AC2DD4;">
+                  <div class="btn__text">Смотреть видео-визитку</div>
+                </button>
+                <button class="btn teachers__btn" style="background: #6A42B9; box-shadow: 10px 15px 30px #6A42B9;">
+                  <div class="btn__text">Смотреть исполнение</div>
+                </button>
               </div>
             </div>
           </div>
