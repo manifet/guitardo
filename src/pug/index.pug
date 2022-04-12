@@ -3,7 +3,6 @@ html(lang="en")
     head
         title О школе
         meta(charset="utf-8")
-        meta(name="viewport" content="width=device-width, initial-scale=1")
         meta(http-equiv="X-UA-Compatible" content="ie=edge")
         link(href="./main.css" type="text/css" rel="stylesheet")
     body
@@ -107,7 +106,7 @@ html(lang="en")
                         button(class="btn indvidual-lesson__btn")
                             div(class="btn__text") ЗАПИСАТЬСЯ НА ИНДИВИДУАЛЬНЫЙ ПРОБНЫЙ УРОК
                         div(class="indvidual-lesson__down-text") Мы позвоним или напишем тебе, чтобы подобрать подходящего преподавателя под твои цели!)
-            section(class="service service_courses")
+            section(class="service service_offline-courses")
                 h1(class="service__title") ПРОГРАММЫ ОБУЧЕНИЯ В НАШЕЙ ШКОЛЕ:
                 div(class="container service__container")
                     div(class="service__heading-wrap")
@@ -127,27 +126,30 @@ html(lang="en")
                     ul(class="courses")
                         li(class="courses__item")
                             div(class="courses__item-back")
-                            h3(class="courses__item-heading") КУРС ПО ВОКАЛУ
-                            span(class="courses__item-title") Научись красиво петь
-                            div(class="courses__item-text") Фундаментальный курс по вокалу для начинающих — от основ дыхания до расширения диапазона и сценического воплощения
+                            div(class="courses__item-wrap")
+                                h3(class="courses__item-heading") КУРС ПО ВОКАЛУ
+                                span(class="courses__item-title") Научись красиво петь
+                                div(class="courses__item-text") Фундаментальный курс по вокалу для начинающих — от основ дыхания до расширения диапазона и сценического воплощения
                             button(class="btn courses__item-btn")
                                 div(class="btn__text") ПОДРОБНЕЕ
                             div(class="courses__logo-wrap")
                                 img(src="./images/logo/logo_1.svg" class="courses__logo" alt="Логотип")
                         li(class="courses__item")
                             div(class="courses__item-back")
-                            h3(class="courses__item-heading") КУРС ПО ФОРТЕПИАНО
-                            span(class="courses__item-title") Научить играть на фортепиано
-                            div(class="courses__item-text") Освой 24 мелодии по программе и 24 любых мелодии (или песни) по твоему выбору в рамках курса!
+                            div(class="courses__item-wrap")
+                                h3(class="courses__item-heading") КУРС ПО ФОРТЕПИАНО
+                                span(class="courses__item-title") Научить играть на фортепиано
+                                div(class="courses__item-text") Освой 24 мелодии по программе и 24 любых мелодии (или песни) по твоему выбору в рамках курса!
                             button(class="btn courses__item-btn")
                                 div(class="btn__text") ПОДРОБНЕЕ
                             div(class="courses__logo-wrap")
                                 img(src="./images/logo/logo_2.svg" class="courses__logo" alt="Логотип")
                         li(class="courses__item")
                             div(class="courses__item-back")
-                            h3(class="courses__item-heading") КУРС ПО ГИТАРЕ
-                            span(class="courses__item-title") Научись играть на гитаре
-                            div(class="courses__item-text") Легендарный курс по акустической гитаре по методике основателя школы, Александра Казакова
+                            div(class="courses__item-wrap")
+                                h3(class="courses__item-heading") КУРС ПО ГИТАРЕ
+                                span(class="courses__item-title") Научись играть на гитаре
+                                div(class="courses__item-text") Легендарный курс по акустической гитаре по методике основателя школы, Александра Казакова
                             button(class="btn courses__item-btn")
                                 div(class="btn__text") ПОДРОБНЕЕ
                             div(class="courses__logo-wrap")

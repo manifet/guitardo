@@ -437,6 +437,9 @@
 
   &_offline-courses {
     background-image: url(./images/backgrounds/service-back_1.jpg);
+    & .service__container{
+      padding-top: 5rem;
+    }
     @include tables {
       background-image: url(./images/backgrounds/service-back_1_adaptive.jpg);
     }
@@ -458,6 +461,9 @@
 
   &_online-courses {
     background-image: url(./images/backgrounds/service-back_4.jpg);
+    & .service__footer-text{
+      max-width: 26rem;
+    }
     @include tables {
       background-image: url(./images/backgrounds/service-back_4_adaptive.jpg);
     }
@@ -485,7 +491,6 @@
   }
 
   &__container {
-    padding: rem(105px) 0 rem(150px);
     align-items: flex-start;
     padding: rem(150px) 0;
     @include tables {
@@ -528,7 +533,7 @@
       @include tables {
         width: rem(196px);
         .service_inv-offline &, .service_inv-online & {
-          margin-top: -2rem;
+          margin-top: -3rem;
         }
       }
     }
@@ -568,6 +573,7 @@
       color: #FFFFFF;
       margin-bottom: 1.5rem;
       list-style-type: disc;
+      display: flex;
       @include tables {
         font-size: rem(20px);
         line-height: rem(24px);
@@ -588,8 +594,8 @@
       color: #FFFFFF;
       max-width: 20rem;
       @include tables {
-        font-size: rem(17px);
-        line-height: rem(21px);
+        font-size: rem(16px);
+        line-height: rem(20px);
       }
     }
 
@@ -603,7 +609,7 @@
       @include tables {
         padding: rem(22px) 0;
         width: rem(307px);
-        margin-right: rem(26px);
+        margin-right: rem(20px);
       }
 
       & .btn__text {
@@ -629,7 +635,8 @@
 .courses {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
   @include tables {
     flex-direction: column;
     align-items: flex-start;
@@ -640,11 +647,18 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+    &-wrap{
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
     &:not(:last-child) {
+      margin-right: 4rem;
       @include tables {
-        margin-bottom: rem(37px);
+        margin: 0 0 rem(37px);
       }
     }
 
