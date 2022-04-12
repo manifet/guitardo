@@ -1,0 +1,295 @@
+/* Teachers section:
+========================================================================== */
+
+.teachers {
+  background-image: url("./images/backgrounds/teachers-back.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat no-repeat;
+  padding-bottom: rem(353px);
+  @include tables {
+    padding-bottom: rem(218px);
+    background-image: url("./images/backgrounds/teachers-back-adaptive.png");
+  }
+
+  &__container {
+    align-items: center;
+    margin-top: rem(118px);
+    @include tables {
+      margin-top: rem(134px);
+    }
+  }
+
+  &__heading {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: rem(50px);
+    line-height: 130%;
+    text-align: center;
+    background: linear-gradient(89.62deg, #EC2D70 -13.84%, #651FF9 39.95%, #6942B9 87.61%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-bottom: 0.75rem;
+    @include tables {
+      font-size: rem(35px);
+      margin-bottom: rem(19px);
+    }
+  }
+
+  &__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: rem(30px);
+    line-height: rem(37px);
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: rem(74px);
+    max-width: 76rem;
+    @include tables {
+      margin-bottom: rem(44px);
+      font-size: rem(23px);
+      line-height: rem(28px);
+    }
+  }
+
+  &__form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: rem(82px);
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  &__select {
+    background: radial-gradient(53.39% 58.43% at 103.62% 50%, #46E5EB 0%, rgba(101, 31, 249, 0) 100%), radial-gradient(52.16% 52.64% at -1.89% 50%, #D95E19 0%, rgba(101, 31, 249, 0.25) 100%), radial-gradient(54.76% 52.5% at 50.23% 100%, #27FB95 9.9%, rgba(95, 34, 195, 0.25) 100%), radial-gradient(50% 50% at 50.23% 0%, #EC2D70 14.58%, rgba(75, 27, 169, 0.25) 100%), #48258F;
+    border-radius: rem(30px);
+    width: rem(297px);
+    padding: rem(20px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    @include tables {
+      width: rem(257px);
+      margin-bottom: 0.25rem;
+    }
+
+    &-wrap {
+      @include tables {
+        margin-bottom: rem(40px);
+      }
+
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+
+    &-title {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: rem(20px);
+      line-height: rem(24px);
+      text-align: center;
+      color: #FFFFFF;
+      @include tables {
+        font-size: rem(17.3678px);
+        line-height: rem(21px);
+      }
+    }
+
+    &-icon {
+      width: rem(25px);
+      height: rem(25px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include tables {
+        width: rem(22px);
+        height: rem(22px);
+      }
+    }
+  }
+
+  &__option {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: rem(20px);
+    line-height: rem(24px);
+    color: #FFFFFF;
+    padding: 1rem 1.5rem;
+    background: rgba(85, 65, 198, 0.34);
+    border-radius: rem(30px);
+    width: 100%;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    @include tables {
+      margin-bottom: 0.25rem;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+
+  &__checkbox {
+    display: none;
+
+    &:checked + .teachers__checkbox-label:after {
+      background: white;
+    }
+
+    &-label {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: rem(20px);
+      line-height: rem(24px);
+      color: #FFFFFF;
+      background: radial-gradient(53.39% 58.43% at 103.62% 50%, #46E5EB 0%, rgba(101, 31, 249, 0) 100%), radial-gradient(52.16% 52.64% at -1.89% 50%, #D95E19 0%, rgba(101, 31, 249, 0.25) 100%), radial-gradient(54.76% 52.5% at 50.23% 100%, #27FB95 9.9%, rgba(95, 34, 195, 0.25) 100%), radial-gradient(50% 50% at 50.23% 0%, #EC2D70 14.58%, rgba(75, 27, 169, 0.25) 100%), #48258F;
+      border-radius: rem(30px);
+      width: rem(297px);
+      padding: rem(20px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.5rem;
+      cursor: pointer;
+      @include tables {
+        width: rem(257px);
+        font-size: rem(17.3678px);
+        line-height: rem(21px);
+        padding: 1rem 1.25rem;
+      }
+
+      &:after {
+        content: " ";
+        width: 1.5rem;
+        height: 1.5rem;
+        border: 0.0625rem solid white;
+        @include tables {
+          width: rem(20px);
+          height: rem(20px);
+        }
+      }
+    }
+  }
+
+  &__card {
+    width: 100%;
+    background: rgba(223, 151, 223, 0.11);
+    border: rem(5px) solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: rem(35px);
+    padding: rem(78px) rem(57px) rem(89px);
+    display: flex;
+    @include tables {
+      flex-direction: column;
+      padding: rem(50px) rem(59px) rem(94px);
+    }
+
+    &-wrap {
+      flex: 1 1 auto;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    &-wrap {
+      width: rem(373px);
+      height: 100%;
+      margin-right: 3rem;
+      flex: 1 0 auto;
+      @include tables {
+        margin: 0 0 rem(56px);
+        width: rem(311px);
+        height: rem(443px);
+      }
+    }
+  }
+
+  &__name {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: rem(25px);
+    line-height: 2rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: rem(6px);
+  }
+
+  &__characters {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: rem(23px);
+    line-height: 2rem;
+    color: #FFFFFF;
+    margin-bottom: 1.25rem;
+    @include tables {
+      margin-bottom: rem(41px);
+    }
+  }
+
+  &__btn {
+    border-radius: rem(37.319px);
+    padding: 1.25rem 0;
+    width: rem(348px);
+    @include tables {
+      padding: 1rem;
+      width: rem(310px);
+    }
+
+    &:not(:last-child) {
+      margin-right: 1rem;
+      margin-bottom: rem(27px);
+      @include tables {
+        margin-bottom: rem(40px);
+      }
+    }
+
+    & .btn__text {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 800;
+      font-size: rem(20px);
+      line-height: rem(24px);
+      text-align: center;
+      color: #FFFFFF;
+      text-transform: none;
+      @include tables {
+        font-size: rem(17.8339px);
+        line-height: rem(22px);
+      }
+
+    }
+
+    &-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: rem(730px);
+      align-items: flex-start;
+
+      &:not(:last-child) {
+        margin-bottom: rem(20px);
+        @include tables {
+          margin-bottom: rem(40px);
+        }
+      }
+    }
+  }
+}

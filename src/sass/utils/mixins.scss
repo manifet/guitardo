@@ -12,4 +12,10 @@
   @return $pixels / $context * 1rem;
 }
 
+@mixin tables {
+  @media screen and (max-width: $tableWidth) {
+    @content;
+  }
+}
+
 

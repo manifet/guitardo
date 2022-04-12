@@ -1,15 +1,21 @@
-.footer{
+/* Footer:
+  ========================================================================== */
+
+.footer {
   padding: rem(92px) 0 rem(104px);
   background: #160F17;
-  &__container{
+
+  &__container {
     align-items: center;
     justify-content: center;
   }
-  &__logo-wrap{
+
+  &__logo-wrap {
     width: rem(173px);
     height: rem(72px);
   }
-  &__telephone{
+
+  &__telephone {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
@@ -19,9 +25,11 @@
     color: #FFFFFF;
     margin-bottom: 0.75rem;
   }
-  &__cards{
+
+  &__cards {
     margin-bottom: rem(26px);
-    &-heading{
+
+    &-heading {
       font-family: 'Montserrat';
       font-style: normal;
       font-weight: 600;
@@ -31,16 +39,22 @@
       color: #FFFFFF;
       margin-bottom: 0.75rem;
     }
-    &-list{
+
+    &-list {
       display: flex;
     }
+    &-link{
+      flex: 0 0 auto;
+    }
   }
-  &__socials{
+
+  &__socials {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: rem(26px);
-    &-heading{
+
+    &-heading {
       font-family: 'Montserrat';
       font-style: normal;
       font-weight: 700;
@@ -50,24 +64,31 @@
       color: #FFFFFF;
       margin-bottom: 1rem;
     }
-    &-list{
+
+    &-list {
       display: flex;
       align-items: center;
       justify-content: center;
     }
-    &-item{
+
+    &-item {
       margin-right: 1rem;
       width: rem(51px);
       height: rem(51px);
     }
+    &-link{
+      flex: 0 0 auto;
+    }
   }
-  &__copyright{
+
+  &__copyright {
     display: flex;
     flex-wrap: wrap;
     max-width: 35rem;
     justify-content: center;
     align-items: center;
-    &-link{
+
+    &-link {
       text-decoration: underline;
       font-family: 'Montserrat';
       font-style: normal;

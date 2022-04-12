@@ -1,14 +1,10 @@
-/* Vars:
-  ========================================================================== */
-
 // Font
-$mainFont                : 'Montserrat', Helvetica, Arial, sans-serif;
+$mainFont: 'Montserrat', Helvetica, Arial, sans-serif;
+$mainFontColor: #101010;
+$mainFontSize: 16px;
+$mainFontWeight: 400;
+$mainLineHeight: 1.4;
 
-// Size
-$mainFontColor           : #101010;
-$mainFontSize            : 16px;
-$mainFontWeight          : 400;
-$mainLineHeight          : 1.4;
-
-$desktopWidth            : 1410px;
-$tableWidth              : 685px;
+// Sizes
+$desktopWidth: 1410px;
+$tableWidth: 768px;
