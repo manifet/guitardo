@@ -366,15 +366,19 @@
     }
   }
 
-  &__smile-wrap {
-    position: absolute;
-    right: -40%;
-    top: -234%;
-    @include tables {
-      width: rem(240px);
-      height: rem(240px);
-      right: 78%;
-      top: -279%;
+  &__smile {
+    width: 100%;
+
+    &-wrap {
+      position: absolute;
+      right: -35%;
+      top: -211%;
+      width: rem(402px);
+      @include tables {
+        width: rem(240px);
+        right: 61%;
+        top: -200%;
+      }
     }
   }
 
@@ -431,6 +435,34 @@
   background-position: center center;
   background-size: cover;
 
+  &_offline-courses {
+    background-image: url(./images/backgrounds/service-back_1.jpg);
+    @include tables {
+      background-image: url(./images/backgrounds/service-back_1_adaptive.jpg);
+    }
+  }
+
+  &_inv-offline {
+    background-image: url(./images/backgrounds/service-back_2.jpg);
+    @include tables {
+      background-image: url(./images/backgrounds/service-back_2_adaptive.jpg);
+    }
+  }
+
+  &_inv-online {
+    background-image: url(./images/backgrounds/service-back_3.jpg);
+    @include tables {
+      background-image: url(./images/backgrounds/service-back_3_adaptive.jpg);
+    }
+  }
+
+  &_online-courses {
+    background-image: url(./images/backgrounds/service-back_4.jpg);
+    @include tables {
+      background-image: url(./images/backgrounds/service-back_4_adaptive.jpg);
+    }
+  }
+
   &__title {
     position: absolute;
     top: -5%;
@@ -479,6 +511,11 @@
       align-items: center;
       margin-bottom: rem(38px);
       position: relative;
+      @include tables {
+        flex-wrap: wrap;
+        margin-bottom: 0;
+        justify-content: flex-end;
+      }
     }
   }
 
@@ -490,6 +527,9 @@
       margin-left: rem(32px);
       @include tables {
         width: rem(196px);
+        .service_inv-offline &, .service_inv-online & {
+          margin-top: -2rem;
+        }
       }
     }
   }
