@@ -672,9 +672,11 @@
       }
       @include phones {
         margin-left: 0;
-        margin-top: 0;
         .service_offline-courses & {
           order: 1;
+        }
+        .service_inv-offline &, .service_inv-online & {
+          margin-top: 0;
         }
       }
     }
