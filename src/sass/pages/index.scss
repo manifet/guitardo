@@ -634,7 +634,7 @@
       font-size: rem(20px);
       line-height: rem(24px);
       text-align: center;
-      .service_offline-courses &{
+      .service_offline-courses & {
         order: 2;
       }
     }
@@ -672,7 +672,7 @@
       }
       @include phones {
         margin-left: 0;
-        .service_offline-courses &{
+        .service_offline-courses & {
           order: 1;
         }
       }
@@ -721,7 +721,7 @@
       line-height: rem(25px);
       color: #FFFFFF;
       margin-bottom: 1.5rem;
-      display: flex;
+      list-style-type: disc;
       @include tables {
         font-size: rem(20px);
         line-height: rem(24px);
@@ -1153,7 +1153,7 @@
       line-height: rem(30px);
       margin-bottom: rem(47px);
     }
-    @include phones{
+    @include phones {
       font-size: rem(14px);
       line-height: 150%;
       margin-bottom: rem(13px);
@@ -1173,7 +1173,7 @@
       font-size: rem(23px);
       line-height: rem(28px);
     }
-    @include phones{
+    @include phones {
       font-size: rem(14px);
       line-height: 150%;
       margin-bottom: rem(13px);
@@ -1189,7 +1189,7 @@
       width: rem(292px);
       padding: rem(20) 0;
     }
-    @include phones{
+    @include phones {
       padding: 1rem;
       width: 100%;
     }
@@ -1204,7 +1204,7 @@
         font-size: rem(19.5809px);
         line-height: rem(24px);
       }
-      @include phones{
+      @include phones {
         font-size: rem(15.8848px);
         line-height: rem(19px);
       }
@@ -1229,7 +1229,7 @@
         @include tables {
           margin: 0 0 2.25rem;
         }
-        @include phones{
+        @include phones {
           margin-bottom: 1.25rem;
         }
       }
