@@ -633,8 +633,10 @@
     @include phones {
       font-size: rem(20px);
       line-height: rem(24px);
-      order: 2;
       text-align: center;
+      .service_offline-courses &{
+        order: 2;
+      }
     }
 
     &-wrap {
@@ -669,8 +671,10 @@
         }
       }
       @include phones {
-        order: 1;
         margin-left: 0;
+        .service_offline-courses &{
+          order: 1;
+        }
       }
     }
   }
