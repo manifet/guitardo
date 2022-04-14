@@ -34,11 +34,7 @@
     font-size: rem(50px);
     line-height: 130%;
     text-align: center;
-    background: linear-gradient(89.62deg, #EC2D70 -13.84%, #651FF9 39.95%, #6942B9 87.61%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
+    color: white;
     margin-bottom: rem(39px);
     @include tables {
       font-size: rem(35px);
@@ -51,7 +47,12 @@
     }
 
     &-style {
-      -webkit-text-fill-color: white;
+      background: linear-gradient(89.62deg, #EC2D70 -13.84%, #651FF9 39.95%, #6942B9 87.61%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      color: white;
     }
   }
 
