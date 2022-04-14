@@ -672,7 +672,7 @@
       }
       @include phones {
         margin-left: 0;
-        margin-top: 0rem;
+        margin-top: 0;
         .service_offline-courses & {
           order: 1;
         }
