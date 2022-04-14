@@ -4,6 +4,9 @@
 .footer {
   padding: rem(92px) 0 rem(104px);
   background: #160F17;
+  @include phones {
+    padding: 2rem 0 3rem;
+  }
 
   &__container {
     align-items: center;
@@ -24,10 +27,19 @@
     text-align: center;
     color: #FFFFFF;
     margin-bottom: 0.75rem;
+    @include phones {
+      font-size: rem(13.6471px);
+      line-height: rem(17px);
+      margin-bottom: rem(6px);
+    }
   }
 
   &__cards {
     margin-bottom: rem(26px);
+    @include phones {
+      margin-bottom: rem(14px
+      );
+    }
 
     &-heading {
       font-family: 'Montserrat';
@@ -38,12 +50,22 @@
       text-align: center;
       color: #FFFFFF;
       margin-bottom: 0.75rem;
+      @include phones {
+        font-size: rem(14.8889px);
+        line-height: rem(18px);
+        margin-bottom: 1rem;
+      }
     }
 
     &-list {
       display: flex;
+      @include phones {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
     }
-    &-link{
+
+    &-link {
       flex: 0 0 auto;
     }
   }
@@ -53,6 +75,9 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: rem(26px);
+    @include phones {
+      margin-bottom: 1.25rem;
+    }
 
     &-heading {
       font-family: 'Montserrat';
@@ -63,6 +88,11 @@
       text-align: center;
       color: #FFFFFF;
       margin-bottom: 1rem;
+      @include phones {
+        font-size: rem(14.0561px);
+        line-height: rem(17px);
+        margin-bottom: 1rem;
+      }
     }
 
     &-list {
@@ -75,9 +105,20 @@
       margin-right: 1rem;
       width: rem(51px);
       height: rem(51px);
+      @include phones {
+        width: rem(35px);
+        height: rem(35px);
+      }
     }
-    &-link{
+
+    &-link {
       flex: 0 0 auto;
+    }
+    &-icon{
+      @include phones{
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 
@@ -87,6 +128,10 @@
     max-width: 35rem;
     justify-content: center;
     align-items: center;
+    @include phones {
+      flex-direction: column;
+      align-items: center;
+    }
 
     &-link {
       text-decoration: underline;
@@ -97,6 +142,11 @@
       line-height: rem(21px);
       color: #FFFFFF;
       margin: 0 0.75rem 0.75rem 0;
+      @include phones{
+        font-size: rem(11.2205px);
+        line-height: rem(14px);
+        margin: 0 0 0.5rem;
+      }
     }
   }
 }

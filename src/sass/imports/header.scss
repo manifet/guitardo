@@ -1,8 +1,17 @@
 .header {
   padding-top: rem(70px);
+  @include phones {
+    padding-top: rem(30px);
+  }
 
   &__container {
     max-width: rem(1130px);
+    @include tables {
+      max-width: rem(554px);
+    }
+    @include phones {
+      max-width: rem(300px);
+    }
   }
 
   &__up {
@@ -10,6 +19,9 @@
     margin-bottom: rem(50px);
     @include tables {
       margin-bottom: 1.25rem;
+    }
+    @include phones {
+      margin-bottom: 1.5rem;
     }
   }
 
@@ -24,7 +36,7 @@
   &__logo-wrap {
     display: flex;
     margin-right: rem(48px);
-    @include tables{
+    @include tables {
       margin: 0;
     }
   }
@@ -32,16 +44,30 @@
   &__btn {
     width: rem(256px);
     padding: rem(11px) 0;
-
-    &:not(:last-child) {
-      margin-right: rem(32px);
+    margin-right: rem(32px);
+    @include tables {
+      margin: 0 0 1rem;
     }
+    @include phones{
+      width: rem(213px);
+      padding: rem(9px) 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+      @include phones
+    }
+
 
     & .btn__text {
       font-weight: 800;
       font-size: rem(15px);
       line-height: rem(18px);
       white-space: nowrap;
+      @include phones{
+        font-size: rem(12.4805px);
+        line-height: rem(15px);
+      }
     }
 
     &:nth-child(1) {
@@ -67,6 +93,14 @@
     &-wrap {
       display: flex;
       align-items: center;
+      @include tables {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      @include phones{
+        justify-content: center;
+      }
     }
   }
 }
@@ -87,9 +121,18 @@
 
   &__item {
     margin-bottom: 2rem;
+    margin-right: 2rem;
+    display: flex;
+    @include phones {
+      margin-bottom: 2rem;
+      margin-right: 1rem;
+    }
 
-    &:not(:last-child) {
-      margin-right: 2rem;
+    &:last-child {
+      margin-right: 0rem;
+      @include phones {
+        margin-right: 1rem;
+      }
     }
 
     &-link {
@@ -102,6 +145,10 @@
       @include tables {
         font-size: rem(18px);
         line-height: rem(22px);
+      }
+      @include phones {
+        font-size: rem(10px);
+        line-height: rem(12px);
       }
     }
   }

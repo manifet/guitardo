@@ -1,3 +1,4 @@
+// utils
 @import './utils/libs';
 @import './utils/vars';
 @import './utils/mixins';
@@ -70,6 +71,9 @@ li {
   flex-direction: column;
   @include tables{
     max-width: rem(554px);
+  }
+  @include phones{
+    max-width: rem(300px);
   }
 }
 

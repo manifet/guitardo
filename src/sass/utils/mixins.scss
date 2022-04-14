@@ -17,5 +17,10 @@
     @content;
   }
 }
+@mixin phones {
+  @media screen and (max-width: $phonesWidth) {
+    @content;
+  }
+}
 
 

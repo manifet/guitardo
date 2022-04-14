@@ -9,7 +9,9 @@
   @include tables {
     padding-bottom: rem(302px);
     background-image: url(./images/backgrounds/welcome-back_adaptive.jpg);
-    background-position: 100% 100%;
+  }
+  @include phones {
+    margin-bottom: 3rem;
   }
 
   &__container {
@@ -17,6 +19,9 @@
     margin-top: rem(98px);
     @include tables {
       margin-top: rem(116px);
+    }
+    @include phones {
+      margin-top: 1rem;
     }
   }
 
@@ -42,6 +47,11 @@
       font-size: rem(35px);
       margin-bottom: rem(52px);
     }
+    @include phones {
+      line-height: 150%;
+      font-size: rem(20px);
+      margin-bottom: 1.25rem;
+    }
 
     &-style {
       -webkit-text-fill-color: white;
@@ -65,6 +75,11 @@
     @include tables {
       font-size: rem(24.5886px);
       background-image: url("./images/other/welcome-title-back_adaptive.svg");
+    }
+    @include phones {
+      background-image: url("./images/other/welcome-title-back_phones-adaptive.svg");
+      font-size: rem(14.8441px);
+      line-height: 150%;
     }
   }
 }
@@ -95,6 +110,12 @@
     @include tables {
       flex-wrap: wrap;
       justify-content: center;
+      margin-right: -2rem;
+    }
+    @include phones {
+      flex-direction: column;
+      align-items: center;
+      margin-right: 0;
     }
   }
 
@@ -107,10 +128,11 @@
       max-width: rem(236px);
       flex: 1 1 auto;
       margin-bottom: 2rem;
-    }
-
-    &:not(:last-child) {
       margin-right: 2rem;
+    }
+    @include phones {
+      margin-right: 0;
+      margin-bottom: 1.25rem;
     }
 
     &-title {
@@ -121,15 +143,26 @@
       line-height: rem(30px);
       text-align: center;
       color: #FFFFFF;
+      @include phones {
+        font-size: rem(13px);
+        line-height: rem(16px);
+      }
     }
   }
 
   &__smile {
+    @include phones {
+      height: 100%;
+    }
+
     &-wrap {
       height: rem(175px);
       display: flex;
       align-items: center;
       z-index: 10;
+      @include phones {
+        height: 6rem;
+      }
     }
   }
 }
@@ -141,6 +174,9 @@
   padding: rem(40px) 0 rem(186px) 0;
   @include tables {
     padding: rem(60px) 0 rem(176px) 0;
+  }
+  @include phones {
+    padding: rem(56px) 0 rem(98px);
   }
 
   &__container {
@@ -163,6 +199,11 @@
       font-size: rem(30px);
       line-height: rem(37px);
       margin-bottom: rem(34px);
+    }
+    @include phones {
+      font-size: rem(20px);
+      line-height: 150%;
+      margin-bottom: 0.5rem;
     }
 
     &-style {
@@ -188,6 +229,11 @@
       margin-bottom: rem(56px);
       font-size: rem(23px);
       line-height: rem(28px);
+    }
+    @include phones {
+      font-size: rem(14px);
+      line-height: 150%;
+      margin-bottom: rem(50px);
     }
   }
 
@@ -253,6 +299,9 @@
       box-sizing: border-box;
       border-radius: rem(13.0263px);
       margin-bottom: rem(28px);
+      @include phones {
+        max-width: rem(262px);
+      }
     }
 
     &-title {
@@ -263,11 +312,18 @@
       font-size: rem(24.916px);
       line-height: rem(30px);
       color: #FFFFFF;
+      @include phones {
+        font-size: rem(17.4667px);
+        line-height: 150%;
+      }
     }
   }
 
   &__sublist {
     margin-bottom: rem(42px);
+    @include phones {
+      margin-bottom: rem(26px);
+    }
   }
 
   &__subitem {
@@ -286,6 +342,11 @@
       line-height: rem(24px);
       color: #FFFFFF;
       max-width: rem(324px);
+      @include phones {
+        font-size: rem(13px);
+        line-height: 150%;
+        margin-left: -2rem;
+      }
     }
   }
 
@@ -298,6 +359,9 @@
       margin-right: 0.25rem;
       width: rem(130px);
       height: rem(116px);
+      @include phones {
+        margin-left: -3rem;
+      }
     }
   }
 
@@ -305,6 +369,10 @@
     max-width: rem(373px);
     padding: 1.25rem 2rem;
     border-radius: 40px;
+    @include phones {
+      width: rem(272px);
+      padding: rem(10px) rem(24px);
+    }
 
     & .btn__text {
       font-weight: 900;
@@ -312,6 +380,10 @@
       line-height: rem(21px);
       color: white;
       text-transform: none;
+      @include phones {
+        font-size: rem(13.6px);
+        line-height: rem(17px);
+      }
     }
   }
 }
@@ -328,6 +400,10 @@
       padding-top: rem(171px);
       padding-bottom: rem(265px);
     }
+    @include phones {
+      padding-top: rem(126px);
+      padding-bottom: 3rem;
+    }
   }
 
   &__heading {
@@ -343,6 +419,12 @@
       font-size: rem(30px);
       line-height: rem(37px);
       margin-bottom: rem(26px);
+    }
+    @include phones {
+      font-size: rem(20px);
+      line-height: 150%;
+      margin-bottom: rem(10px);
+      text-align: center;
     }
 
     &-wrap {
@@ -364,6 +446,12 @@
       line-height: rem(28px);
       margin-bottom: rem(46px);
     }
+    @include phones {
+      font-size: rem(14px);
+      line-height: 150%;
+      margin-bottom: rem(20px);
+      text-align: center;
+    }
   }
 
   &__smile {
@@ -379,6 +467,10 @@
         right: 61%;
         top: -200%;
       }
+      @include phones {
+        right: 8%;
+        top: -196%;
+      }
     }
   }
 
@@ -388,6 +480,9 @@
     @include tables {
       flex-direction: column;
       align-items: flex-start;
+    }
+    @include phones {
+      flex-direction: column;
     }
 
     &-text {
@@ -401,6 +496,11 @@
       @include tables {
         max-width: none;
       }
+      @include phones {
+        text-align: center;
+        font-size: rem(12px);
+        line-height: 150%;
+      }
     }
   }
 
@@ -413,6 +513,12 @@
     @include tables {
       margin-bottom: rem(37px);
     }
+    @include phones {
+      width: rem(300px);
+      padding: rem(15px);
+      margin-bottom: rem(26px);
+      width: 100%;
+    }
 
     & .btn__text {
       font-family: 'Montserrat';
@@ -423,6 +529,10 @@
       text-align: center;
       text-transform: uppercase;
       color: #FFFFFF;
+      @include phones {
+        font-size: rem(12px);
+        line-height: rem(15px);
+      }
     }
   }
 }
@@ -437,9 +547,11 @@
 
   &_offline-courses {
     background-image: url(./images/backgrounds/service-back_1.jpg);
-    & .service__container{
+
+    & .service__container {
       padding-top: 5rem;
     }
+
     @include tables {
       background-image: url(./images/backgrounds/service-back_1_adaptive.jpg);
     }
@@ -461,9 +573,11 @@
 
   &_online-courses {
     background-image: url(./images/backgrounds/service-back_4.jpg);
-    & .service__footer-text{
+
+    & .service__footer-text {
       max-width: 26rem;
     }
+
     @include tables {
       background-image: url(./images/backgrounds/service-back_4_adaptive.jpg);
     }
@@ -488,6 +602,12 @@
       max-width: rem(562px);
       top: -4%;
     }
+    @include phones {
+      font-size: rem(20px);
+      line-height: 130%;
+      top: -1%;
+      max-width: rem(280px);
+    }
   }
 
   &__container {
@@ -495,6 +615,9 @@
     padding: rem(150px) 0;
     @include tables {
       padding: rem(120px) 0;
+    }
+    @include phones {
+      padding: rem(80px) 0;
     }
   }
 
@@ -510,6 +633,12 @@
     @include tables {
       font-size: rem(30px);
     }
+    @include phones {
+      font-size: rem(20px);
+      line-height: rem(24px);
+      order: 2;
+      text-align: center;
+    }
 
     &-wrap {
       display: flex;
@@ -520,6 +649,12 @@
         flex-wrap: wrap;
         margin-bottom: 0;
         justify-content: flex-end;
+      }
+      @include phones {
+        flex-direction: column;
+        margin-bottom: 0.5rem;
+        align-items: center;
+        width: 100%;
       }
     }
   }
@@ -536,6 +671,10 @@
           margin-top: -3rem;
         }
       }
+      @include phones {
+        order: 1;
+        margin-left: 0;
+      }
     }
   }
 
@@ -543,6 +682,9 @@
     margin-bottom: (92px);
     @include tables {
       margin-bottom: rem(60px);
+    }
+    @include phones {
+      margin-bottom: rem(30px);
     }
 
     &-heading {
@@ -558,6 +700,12 @@
         font-size: rem(20px);
         line-height: rem(24px);
       }
+      @include phones {
+        font-size: rem(16px);
+        line-height: rem(20px);
+        text-align: center;
+        margin-bottom: rem(25px);
+      }
     }
 
     &-list {
@@ -572,11 +720,14 @@
       line-height: rem(25px);
       color: #FFFFFF;
       margin-bottom: 1.5rem;
-      list-style-type: disc;
       display: flex;
       @include tables {
         font-size: rem(20px);
         line-height: rem(24px);
+      }
+      @include phones {
+        font-size: rem(13px);
+        line-height: 150%;
       }
     }
   }
@@ -584,6 +735,10 @@
   &__footer {
     display: flex;
     align-items: center;
+    @include phones {
+      flex-direction: column;
+      align-items: center;
+    }
 
     &-text {
       font-family: 'Montserrat';
@@ -596,6 +751,11 @@
       @include tables {
         font-size: rem(16px);
         line-height: rem(20px);
+      }
+      @include phones {
+        font-size: rem(12px);
+        line-height: rem(15px);
+        text-align: center;
       }
     }
 
@@ -611,6 +771,11 @@
         width: rem(307px);
         margin-right: rem(20px);
       }
+      @include phones {
+        width: 100%;
+        padding: 1rem;
+        margin: 0 0 1.5rem;
+      }
 
       & .btn__text {
         font-family: 'Montserrat';
@@ -624,6 +789,10 @@
         @include tables {
           font-size: rem(22.3273px);
           line-height: rem(27px);
+        }
+        @include phones {
+          font-size: rem(17.0667px);
+          line-height: rem(21px);
         }
       }
     }
@@ -649,12 +818,22 @@
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 2.5rem;
-    &-wrap{
+    @include phones {
+      padding: 1rem 0.5rem;
+      width: 100%;
+      margin-bottom: rem(28px);
+    }
+
+    &-wrap {
       z-index: 2;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+      @include phones {
+        align-items: center;
+      }
     }
+
     &:not(:last-child) {
       margin-right: 4rem;
       @include tables {
@@ -732,6 +911,12 @@
         font-size: rem(23px);
         line-height: rem(28px);
       }
+      @include phones {
+        font-size: rem(16.08px);
+        line-height: rem(20px);
+        margin-bottom: 0.5rem;
+        text-align: center;
+      }
     }
 
     &-title {
@@ -749,6 +934,12 @@
       @include tables {
         font-size: rem(18px);
         line-height: rem(22px);
+      }
+      @include phones {
+        font-size: rem(12.864px);
+        line-height: rem(16px);
+        text-align: center;
+        margin-bottom: 0.5rem;
       }
     }
 
@@ -768,6 +959,12 @@
         font-size: rem(18px);
         line-height: rem(22px);
       }
+      @include phones {
+        max-width: none;
+        font-size: rem(12.864px);
+        line-height: 150%;
+        margin-bottom: rem(30px);
+      }
     }
 
     &-btn {
@@ -776,6 +973,10 @@
       border-radius: 30px;
       z-index: 2;
       position: relative;
+      @include phones {
+        width: 100%;
+        padding: rem(10px) 0;
+      }
 
       &:after {
         content: "";
@@ -794,16 +995,29 @@
         font-size: rem(20px);
         line-height: rem(24px);
         color: #FFFFFF;
+        @include phones {
+          font-size: rem(16.08px);
+          line-height: rem(20px);
+        }
       }
     }
   }
 
   &__logo {
+    @include phones {
+      width: 100%;
+    }
+
     &-wrap {
       position: absolute;
       z-index: 2;
       left: -21%;
       bottom: -5%;
+      @include phones {
+        width: 4.5rem;
+        left: -8%;
+        bottom: -21%;
+      }
     }
   }
 }
@@ -812,11 +1026,14 @@
   ========================================================================== */
 .slider {
   padding: rem(225px) 0 rem(55px);
-  background: url("./images/slider-back.jpg");
+  background: url("./images/backgrounds/slider-back.jpg");
   background-size: cover;
   background-position: center center;
   @include tables {
     padding: rem(105px) 0 rem(96px);
+  }
+  @include phones {
+    padding: rem(54px) 0 1rem;
   }
 
   &__container {
@@ -838,6 +1055,11 @@
       font-size: rem(30px);
       margin-bottom: rem(38px);
     }
+    @include phones {
+      font-size: rem(20px);
+      line-height: 130%;
+      margin-bottom: 2rem;
+    }
   }
 
   &__wrap {
@@ -848,6 +1070,9 @@
     @include tables {
       max-width: rem(414px);
     }
+    @include phones {
+      height: rem(212px);
+    }
   }
 
   &__list {
@@ -856,10 +1081,12 @@
     width: 100%;
     height: 100%;
     display: flex;
+    @include phones {
+      border-radius: rem(20px);
+    }
   }
 
   &__item {
-    background: url("./slider-fake.jpg");
     width: 100%;
     height: 100%;
   }
@@ -876,6 +1103,9 @@
     transform: translateY(-50%);
     top: 50%;
     position: absolute;
+    @include phones {
+      display: none;
+    }
 
     &-icon {
       fill: none;
@@ -903,6 +1133,9 @@
     padding: rem(116px) 0 rem(268px);
     background-image: url("./images/backgrounds/subscribe-back_adaptive.jpg");
   }
+  @include phones {
+    padding: 1rem 0 rem(92px);
+  }
 
   &__heading {
     font-family: 'Montserrat';
@@ -919,6 +1152,11 @@
       line-height: rem(30px);
       margin-bottom: rem(47px);
     }
+    @include phones{
+      font-size: rem(14px);
+      line-height: 150%;
+      margin-bottom: rem(13px);
+    }
   }
 
   &__title {
@@ -934,6 +1172,11 @@
       font-size: rem(23px);
       line-height: rem(28px);
     }
+    @include phones{
+      font-size: rem(14px);
+      line-height: 150%;
+      margin-bottom: rem(13px);
+    }
   }
 
   &__btn {
@@ -945,6 +1188,10 @@
       width: rem(292px);
       padding: rem(20) 0;
     }
+    @include phones{
+      padding: 1rem;
+      width: 100%;
+    }
 
     & .btn__text {
       font-weight: 900;
@@ -955,6 +1202,10 @@
       @include tables {
         font-size: rem(19.5809px);
         line-height: rem(24px);
+      }
+      @include phones{
+        font-size: rem(15.8848px);
+        line-height: rem(19px);
       }
     }
 
@@ -976,6 +1227,9 @@
         margin-right: 1.5rem;
         @include tables {
           margin: 0 0 2.25rem;
+        }
+        @include phones{
+          margin-bottom: 1.25rem;
         }
       }
 
