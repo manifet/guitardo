@@ -10,9 +10,6 @@
     padding-bottom: rem(302px);
     background-image: url(./images/backgrounds/welcome-back_adaptive.jpg);
   }
-  @include phones {
-    margin-bottom: 3rem;
-  }
 
   &__container {
     align-items: center;
