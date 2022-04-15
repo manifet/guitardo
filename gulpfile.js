@@ -41,7 +41,7 @@ task("copy:fonts", () => {
 
 task("html", () => {
     return src(`${SRC_PATH}/pug/*.pug`)
-        .pipe(pug({pretty: true}))
+        .pipe(pug({pretty: false}))
         .pipe(dest(`${DIST_PATH}`))
         .pipe(reload({stream: true}));
 });
