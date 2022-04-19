@@ -1,0 +1,145 @@
+.modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow-y: overlay;
+  z-index: 9999;
+  padding: 1rem 0;
+
+  &__form {
+    background: linear-gradient(180deg, #0D0D0D 0%, #1A101B 100%);
+    border-radius: rem(47.6319px);
+    padding: rem(139px) rem(125px) rem(183px);
+    max-width: rem(969px);
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include phones {
+      padding: rem(42px) rem(24px);
+      max-width: rem(290px);
+      border-radius: rem(14.2512px);
+    }
+
+    &-submit {
+      background: radial-gradient(53.39% 58.43% at 103.62% 50%, #46E5EB 0%, rgba(101, 31, 249, 0) 100%), radial-gradient(52.16% 52.64% at -1.89% 50%, #D95E19 0%, rgba(101, 31, 249, 0.25) 100%), radial-gradient(54.76% 52.5% at 50.23% 100%, #27FB95 9.9%, rgba(95, 34, 195, 0.25) 100%), radial-gradient(50% 50% at 50.23% 0%, #EC2D70 14.58%, rgba(75, 27, 169, 0.25) 100%), #48258F;
+      box-shadow: rem(12.3708px) rem(18.5562px) rem(37.1124px) #554DD0;
+      border-radius: rem(61.854px);
+      padding: rem(37px);
+      width: 100%;
+      margin-bottom: 3rem;
+      @include phones {
+        padding: rem(12px);
+        margin-bottom: rem(20px);
+      }
+
+      & .btn__text {
+        font-weight: 800;
+        font-size: rem(21.6378px);
+        line-height: rem(26px);
+        color: white;
+        @include phones {
+          font-size: rem(7.30217px);
+          line-height: rem(9px);
+        }
+      }
+    }
+  }
+
+  &__heading {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: rem(43.535px);
+    text-transform: uppercase;
+    line-height: 130%;
+    text-align: center;
+    background: linear-gradient(89.62deg, #F85D93 -13.84%, #8F5DFA 39.95%, #6942B9 87.61%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-bottom: 5rem;
+    @include phones {
+      font-size: rem(13.0254px);
+      line-height: 130%;
+      margin-bottom: 1rem;
+      max-width: rem(200px);
+    }
+  }
+
+  &__input {
+    width: 100%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 275;
+    font-size: rem(21.6378px);
+    line-height: 130%;
+    color: #FFFFFF;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: rem(2.4px) solid white;
+    padding-bottom: rem(10px);
+    @include phones {
+      font-size: rem(7.29747px);
+    }
+
+    &-wrap {
+      width: 100%;
+      margin-bottom: rem(90px);
+      @include phones {
+        margin-bottom: rem(32px);
+        border-bottom: rem(0.81px) solid white;
+      }
+    }
+  }
+
+  &__copyright {
+    display: none;
+
+    &:checked + .modal__copyright-label:before {
+      background: white;
+    }
+
+    &-link {
+      color: #8F5DFA;
+      margin-left: 0.25rem;
+    }
+
+    &-label {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 275;
+      font-size: rem(18.0315px);
+      line-height: 130%;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: center;
+      color: #FFFFFF;
+      @include phones {
+        font-size: rem(5.39493px);
+        line-height: 130%;
+      }
+
+      &:before {
+        display: block;
+        content: "";
+        width: rem(20px);
+        height: rem(20px);
+        border: rem(1.2021px) solid #FFFFFF;
+        margin-right: rem(18px);
+        @include phones {
+          width: rem(6px);
+          height: rem(6px);
+          border: rem(0.359662px) solid #FFFFFF;
+          margin-right: rem(5.4px);
+        }
+      }
+    }
+  }
+}

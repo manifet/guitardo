@@ -18,7 +18,7 @@ html(lang="en")
                             div(class="teachers__select")
                                 div(class="teachers__select-title") Направление
                                 div(class="teachers__select-icon")
-                                    img(src="./images/other/select.svg" alt="Select icon")
+                                    img(src="./images/other/select.svg" class="teachers__select-img" alt="Select icon")
                             ul(class="teachers__option-list")
                                 li(class="teachers__option") Вокал
                                 li(class="teachers__option") Фортепиано
@@ -27,7 +27,7 @@ html(lang="en")
                             div(class="teachers__select")
                                 div(class="teachers__select-title") Мужчина/женщина
                                 div(class="teachers__select-icon")
-                                    img(src="./images/other/select.svg" alt="Select icon")
+                                    img(src="./images/other/select.svg" class="teachers__select-img" alt="Select icon")
                             ul(class="teachers__option-list")
                                 li(class="teachers__option") Вокал
                                 li(class="teachers__option") Фортепиано
@@ -39,25 +39,23 @@ html(lang="en")
                             label(class="teachers__checkbox-label" for="checkbox-2") Работает с детьми
                     div(class="teachers__card")
                         div(class="teachers__img-wrap")
-                            img(src="./images/other/fake.jpg" class="teachers__img" alt="Преподаватель")
+                            img(src="./images/teachers/teachers_1.jpg" class="teachers__img" alt="Преподаватель")
                         div(class="teachers__card-wrap")
-                            div(class="teachers__name") Имя, Фамилия
                             div(class="teachers__characters")
-                                p() Направление
-                                p() Обучает онлайн
-                                p() Работает с детьми
-                                p() Занимается музыкой: Х лет
-                                p() Стаж преподавания:
-                                p() Образование:
-                                p() Музыкальные предпочтения:
-                                p() Какие программы ведет?
-                                p() Особенные музыкальные навыки:
-                                p() Подход к преподаванию:
+                                h3(class="teachers__name") Дмитрий Константинов
+                                p() <span class="teachers__characters-bold">&#127908; ВОКАЛ</span>
+                                p() <span class="teachers__characters-bold">&#11088; 25 лет опыта,</span> cтаж преподавания — 15 лет
+                                p() &#127891; РАМ им. Гнесиных
+                                p() <span class="teachers__characters-bold">&#9989; ИНДИВИДУАЛЬНЫЕ И ГРУППОВЫЕ УРОКИ ВОКАЛА</span>
+                                p() <span class="teachers__characters-bold">&#128102;&#128103; Работает с детьми с 6 лет</span>
+                                p() <span class="teachers__characters-bold">&#128156; Предпочтения:</span> джаз, эстрада, народная музыка
+                                p() Жесткий, дисциплинированный подход, с акцентом на глубокие теоретические знания
                             div(class="teachers__btn-wrap")
-                                button(class="btn teachers__btn" style="background: linear-gradient(89.62deg, #EC2D70 -13.84%, #651FF9 39.95%, #6942B9 87.61%); box-shadow: 0,3125rem 0.625rem 1.25rem #713FD3;")
+                                button(class="btn teachers__btn" style="background: linear-gradient(89.62deg, #EC2D70 -13.84%, #651FF9 39.95%, #6942B9 87.61%); box-shadow: 0.3125rem 0.625rem 1.25rem #713FD3;")
                                     div(class="btn__text") Записаться на занятие
                             div(class="teachers__btn-wrap")
                                 button(class="btn teachers__btn" style="background: #C42999; box-shadow: 0.625rem 0.9375rem 1.875rem #AC2DD4;")
                                     div(class="btn__text") Смотреть видео-визитку
                                 button(class="btn teachers__btn" style="background: #6A42B9; box-shadow: 0.625rem 0.9375rem 1.875rem #6A42B9;")
                                     div(class="btn__text") Смотреть исполнение
+        include ./blocks/modal

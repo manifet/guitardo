@@ -11,12 +11,18 @@
     padding-bottom: rem(218px);
     background-image: url("./images/backgrounds/teachers-back-adaptive.png");
   }
+  @include phones {
+    padding-bottom: rem(117px);
+  }
 
   &__container {
     align-items: center;
     margin-top: rem(118px);
     @include tables {
       margin-top: rem(134px);
+    }
+    @include phones {
+      margin-top: 2rem;
     }
   }
 
@@ -37,6 +43,11 @@
       font-size: rem(35px);
       margin-bottom: rem(19px);
     }
+    @include phones {
+      font-size: rem(20px);
+      line-height: 150%;
+      margin-bottom: rem(6px);
+    }
   }
 
   &__title {
@@ -54,6 +65,11 @@
       font-size: rem(23px);
       line-height: rem(28px);
     }
+    @include phones {
+      font-size: rem(14px);
+      line-height: 150%;
+      margin-bottom: rem(25px);
+    }
   }
 
   &__form {
@@ -63,6 +79,11 @@
     margin-bottom: rem(82px);
     align-items: flex-start;
     flex-wrap: wrap;
+    @include phones {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: rem(58px);
+    }
   }
 
   &__select {
@@ -79,6 +100,10 @@
       width: rem(257px);
       margin-bottom: 0.25rem;
     }
+    @include phones {
+      width: rem(220px);
+      padding: rem(14px);
+    }
 
     &-wrap {
       @include tables {
@@ -87,6 +112,10 @@
 
       &:not(:last-child) {
         margin-right: 1rem;
+        @include phones {
+          margin-right: 0;
+          margin-bottom: 2rem;
+        }
       }
     }
 
@@ -102,6 +131,10 @@
         font-size: rem(17.3678px);
         line-height: rem(21px);
       }
+      @include phones {
+        font-size: rem(14.7699px);
+        line-height: rem(18px);
+      }
     }
 
     &-icon {
@@ -114,6 +147,15 @@
         width: rem(22px);
         height: rem(22px);
       }
+      @include phones {
+        width: rem(18px);
+        height: rem(18px);
+      }
+    }
+
+    &-img {
+      width: 100%;
+      height: 100%;
     }
   }
 
@@ -133,6 +175,11 @@
     @include tables {
       margin-bottom: 0.25rem;
     }
+    @include phones {
+      font-size: rem(14.7699px);
+      line-height: rem(18px);
+      padding: rem(14px);
+    }
 
     &-list {
       display: flex;
@@ -146,6 +193,14 @@
 
     &:checked + .teachers__checkbox-label:after {
       background: white;
+    }
+
+    &-wrap {
+      &:not(:last-child) {
+        @include phones {
+          margin-bottom: rem(18px);
+        }
+      }
     }
 
     &-label {
@@ -170,6 +225,12 @@
         line-height: rem(21px);
         padding: 1rem 1.25rem;
       }
+      @include phones {
+        font-size: rem(14.7699px);
+        line-height: rem(18px);
+        width: rem(220px);
+        padding: rem(14px);
+      }
 
       &:after {
         content: " ";
@@ -179,6 +240,10 @@
         @include tables {
           width: rem(20px);
           height: rem(20px);
+        }
+        @include phones {
+          width: 1rem;
+          height: 1rem;
         }
       }
     }
@@ -196,9 +261,16 @@
       flex-direction: column;
       padding: rem(50px) rem(59px) rem(94px);
     }
+    @include phones {
+      padding: 2rem rem(19px) rem(55px);
+      align-items: center;
+    }
 
     &-wrap {
       flex: 1 1 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
   }
 
@@ -209,13 +281,23 @@
 
     &-wrap {
       width: rem(373px);
-      height: 100%;
+      height: rem(532px);
       margin-right: 3rem;
       flex: 1 0 auto;
       @include tables {
         margin: 0 0 rem(56px);
         width: rem(311px);
         height: rem(443px);
+      }
+      @include phones {
+        width: rem(173px);
+        height: rem(257px);
+        margin-right: 0;
+        margin-bottom: rem(20px);
+      }
+
+      &:last-child {
+        margin-bottom: -2rem;
       }
     }
   }
@@ -228,19 +310,32 @@
     line-height: 2rem;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin-bottom: rem(6px);
+    margin-bottom: rem(16px);
+    @include phones {
+      font-size: rem(17px);
+      line-height: rem(32px);
+      margin-bottom: rem(5px);
+    }
   }
 
   &__characters {
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 600;
-    font-size: rem(23px);
+    font-weight: 400;
+    font-size: rem(20px);
     line-height: 2rem;
     color: #FFFFFF;
-    margin-bottom: 1.25rem;
+    margin-bottom: 2rem;
     @include tables {
       margin-bottom: rem(41px);
+    }
+    @include phones {
+      font-size: rem(14px);
+      margin-bottom: rem(28px);
+    }
+
+    &-bold {
+      font-weight: 600;
     }
   }
 
@@ -252,12 +347,20 @@
       padding: 1rem;
       width: rem(310px);
     }
+    @include phones {
+      width: rem(230px);
+      padding: rem(13px);
+    }
 
     &:not(:last-child) {
       margin-right: 1rem;
       margin-bottom: rem(27px);
       @include tables {
         margin-bottom: rem(40px);
+      }
+      @include phones {
+        margin-bottom: rem(25px);
+        margin-right: 0;
       }
     }
 
@@ -274,7 +377,10 @@
         font-size: rem(17.8339px);
         line-height: rem(22px);
       }
-
+      @include phones {
+        font-size: rem(13.2184px);
+        line-height: rem(16px);
+      }
     }
 
     &-wrap {
@@ -283,11 +389,19 @@
       justify-content: space-between;
       max-width: rem(730px);
       align-items: flex-start;
+      margin-bottom: rem(27px);
+      @include tables {
+        margin-bottom: rem(40px);
+      }
+      @include phones {
+        margin-bottom: rem(25px);
+        justify-content: center;
+      }
 
-      &:not(:last-child) {
-        margin-bottom: rem(20px);
-        @include tables {
-          margin-bottom: rem(40px);
+      &:last-child {
+        margin-bottom: - rem(27px);
+        @include phones {
+          margin-bottom: 0;
         }
       }
     }
