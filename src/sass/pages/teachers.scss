@@ -75,14 +75,47 @@
   &__form {
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    margin-bottom: rem(82px);
-    align-items: flex-start;
-    flex-wrap: wrap;
-    @include phones {
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: rem(58px);
+    flex-direction: column;
+    align-items: center;
+
+    &-tools {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: rem(82px);
+      align-items: flex-start;
+      flex-wrap: wrap;
+      @include phones {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: rem(58px);
+      }
+    }
+
+    &-submit {
+      background: linear-gradient(89.62deg, #EC2D70 -13.84%, #651FF9 39.95%, #6942B9 87.61%);
+      box-shadow: rem(5.8908px) rem(11.7816px) rem(23.5632px) #713FD3;
+      border-radius: rem(43.9678px);
+      width: 100%;
+      max-width: rem(410px);
+      padding: 1.25rem;
+      @include phones{
+        border-radius: rem(25.0938px);
+        padding: rem(12px);
+        max-width: rem(234px);
+      }
+      & .btn__text{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 900;
+        font-size: rem(27.0977px);
+        line-height: rem(33px);
+        color: #FFFFFF;
+        @include phones{
+          font-size: rem(15.4655px);
+          line-height: rem(19px);
+        }
+      }
     }
   }
 
@@ -257,6 +290,7 @@
     border-radius: rem(35px);
     padding: rem(78px) rem(57px) rem(89px);
     display: flex;
+    margin-bottom: 5rem;
     @include tables {
       flex-direction: column;
       padding: rem(50px) rem(59px) rem(94px);
@@ -264,6 +298,7 @@
     @include phones {
       padding: 2rem rem(19px) rem(55px);
       align-items: center;
+      margin-bottom: rem(40px);
     }
 
     &-wrap {
@@ -284,6 +319,7 @@
       height: rem(532px);
       margin-right: 3rem;
       flex: 1 0 auto;
+      position: relative;
       @include tables {
         margin: 0 0 rem(56px);
         width: rem(311px);
@@ -298,6 +334,24 @@
 
       &:last-child {
         margin-bottom: -2rem;
+      }
+    }
+  }
+
+  &__online-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+    &-wrap {
+      position: absolute;
+      width: rem(68px);
+      height: rem(116px);
+      top: 0;
+      left: 6%;
+      @include phones {
+        width: rem(34px);
+        height: rem(58px);
       }
     }
   }

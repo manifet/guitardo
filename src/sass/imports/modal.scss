@@ -7,45 +7,72 @@
   overflow-y: overlay;
   z-index: 9999;
   padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.9);
 
   &__form {
     background: linear-gradient(180deg, #0D0D0D 0%, #1A101B 100%);
     border-radius: rem(47.6319px);
-    padding: rem(139px) rem(125px) rem(183px);
-    max-width: rem(969px);
+    padding: rem(61px) rem(71px) rem(47px) rem(90px);
+    max-width: rem(772px);
     width: 95%;
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
     @include phones {
-      padding: rem(42px) rem(24px);
+      width: 100%;
+      padding: rem(78px) rem(13px) rem(24px);
       max-width: rem(290px);
-      border-radius: rem(14.2512px);
+      border-radius: rem(47.6319px);
+      max-width: rem(300px);
     }
 
     &-submit {
       background: radial-gradient(53.39% 58.43% at 103.62% 50%, #46E5EB 0%, rgba(101, 31, 249, 0) 100%), radial-gradient(52.16% 52.64% at -1.89% 50%, #D95E19 0%, rgba(101, 31, 249, 0.25) 100%), radial-gradient(54.76% 52.5% at 50.23% 100%, #27FB95 9.9%, rgba(95, 34, 195, 0.25) 100%), radial-gradient(50% 50% at 50.23% 0%, #EC2D70 14.58%, rgba(75, 27, 169, 0.25) 100%), #48258F;
       box-shadow: rem(12.3708px) rem(18.5562px) rem(37.1124px) #554DD0;
       border-radius: rem(61.854px);
-      padding: rem(37px);
+      padding: rem(29px);
       width: 100%;
-      margin-bottom: 3rem;
+      margin-bottom: rem(76px);
       @include phones {
-        padding: rem(12px);
-        margin-bottom: rem(20px);
+        margin-bottom: rem(57px);
+        padding: rem(11px);
+        max-width: rem(266px);
       }
 
       & .btn__text {
         font-weight: 800;
-        font-size: rem(21.6378px);
-        line-height: rem(26px);
+        font-size: rem(18px);
+        line-height: rem(22px);
         color: white;
         @include phones {
-          font-size: rem(7.30217px);
-          line-height: rem(9px);
+          font-size: rem(14px);
+          line-height: rem(17px);
+          max-width: rem(200px);
         }
       }
+    }
+  }
+
+  &__close {
+    &-wrap {
+      position: absolute;
+      top: -1%;
+      right: -3%;
+      cursor: pointer;
+      @include phones{
+        top: -3%;
+        right: -12%;
+      }
+    }
+
+    &-icon {
+      width: 100%;
+      height: 100%;
     }
   }
 
@@ -53,21 +80,22 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 900;
-    font-size: rem(43.535px);
-    text-transform: uppercase;
+    font-size: rem(23px);
     line-height: 130%;
+    text-transform: uppercase;
     text-align: center;
     background: linear-gradient(89.62deg, #F85D93 -13.84%, #8F5DFA 39.95%, #6942B9 87.61%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
-    margin-bottom: 5rem;
+    margin-bottom: rem(60px);
+    max-width: rem(558px);
     @include phones {
-      font-size: rem(13.0254px);
+      font-size: rem(18px);
       line-height: 130%;
-      margin-bottom: 1rem;
-      max-width: rem(200px);
+      max-width: none;
+      margin-bottom: rem(49px);
     }
   }
 
@@ -85,15 +113,43 @@
     border-bottom: rem(2.4px) solid white;
     padding-bottom: rem(10px);
     @include phones {
-      font-size: rem(7.29747px);
+      font-size: 1rem;
+      border-bottom: 0.05063rem solid white;
+      max-width: rem(230px);
+      padding-bottom: rem(3px);
     }
 
     &-wrap {
       width: 100%;
-      margin-bottom: rem(90px);
+      margin-bottom: rem(35px);
+      display: flex;
+      align-items: center;
+      &:last-child {
+        margin-bottom: rem(54px);
+        @include phones{
+          margin-bottom: rem(45px);
+        }
+      }
+
       @include phones {
-        margin-bottom: rem(32px);
-        border-bottom: rem(0.81px) solid white;
+        margin-bottom: rem(45px);
+        justify-content: center;
+      }
+    }
+
+    &-icon {
+      width: 100%;
+      height: 100%;
+
+      &-wrap {
+        width: rem(30px);
+        height: rem(30px);
+        margin-right: rem(10px);
+        @include phones{
+          width: rem(20px);
+          height: rem(20px);
+          margin-right: 0.5rem;
+        }
       }
     }
   }
@@ -108,6 +164,9 @@
     &-link {
       color: #8F5DFA;
       margin-left: 0.25rem;
+      @include phones{
+        margin-left: rem(30px);
+      }
     }
 
     &-label {
@@ -121,23 +180,25 @@
       width: 100%;
       justify-content: center;
       color: #FFFFFF;
+      flex-wrap: wrap;
       @include phones {
-        font-size: rem(5.39493px);
-        line-height: 130%;
+        font-size: rem(12px);
+        justify-content: flex-start;
+        max-width: rem(250px);
       }
 
       &:before {
         display: block;
         content: "";
-        width: rem(20px);
-        height: rem(20px);
+        width: rem(26px);
+        height: rem(26px);
         border: rem(1.2021px) solid #FFFFFF;
-        margin-right: rem(18px);
+        margin-right: rem(13px);
         @include phones {
-          width: rem(6px);
-          height: rem(6px);
+          width: rem(20px);
+          height: rem(20px);
           border: rem(0.359662px) solid #FFFFFF;
-          margin-right: rem(5.4px);
+          margin-right: rem(10px);
         }
       }
     }
